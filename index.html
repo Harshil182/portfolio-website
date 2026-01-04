@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshil | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Harshil</span></h1>
+        <p>Aspiring Full-Stack Web Developer</p>
+        <a href="#projects" class="btn">View Projects</a>
+      </div>
+    </header>
 
-  <header>
-    <h1>Harshil Prajapati</h1>
-    <p>Aspiring Full Stack Web Developer</p>
-  </header>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am an aspiring full-stack web developer focused on building clean,
+        responsive, and user-friendly web applications. Currently learning the
+        MERN stack and improving my skills through real-world projects.
+      </p>
+    </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>React</div>
+        <div>Node.js</div>
+        <div>MongoDB</div>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an aspiring full-stack web developer learning MERN stack and building
-      real-world projects to improve my skills.
-    </p>
-  </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Responsive Portfolio Website</h3>
-      <p>Built using HTML, CSS, and JavaScript with Flexbox and Media Queries.</p>
-      <button onclick="showAlert()">View Project</button>
-    </div>
-  </section>
+      <div class="project-card">
+        <h3>Modern Full-Stack Portfolio</h3>
+        <p>
+          Designed and developed a visually appealing, responsive portfolio
+          showcasing projects, skills, and development journey with a focuson
+          clean UI and user experience.
+        </p>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: prajapatiharshil251@gmail.com</p>
-  </section>
+        <button onclick="openProject()">Live Demo</button>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2026 Harshil Prajapati</p>
-  </footer>
+    <footer>
+      <p>© 2026 Harshil Prajapati | Full Stack Developer</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
