@@ -1,3 +1,3 @@
-function showAlert() {
-  alert("Project link will be added soon!");
+function openProject() {
+  alert("Live project link will be added here!");
 }
