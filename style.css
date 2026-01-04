@@ -2,69 +2,102 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  line-height: 1.6;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
 }
 
-header {
-  background: #1e293b;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-nav {
+/* HERO */
+.hero {
+  height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  background: #334155;
-  padding: 10px;
 }
 
-nav a {
-  color: white;
+.hero-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 50px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #38bdf8;
+  color: #020617;
   text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
+/* SECTIONS */
 section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 60px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* SKILLS */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+.skill-grid div {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* PROJECTS */
 .project-card {
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
-button {
-  padding: 8px 15px;
+.project-card button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: #38bdf8;
   border: none;
-  background: #2563eb;
-  color: white;
+  border-radius: 20px;
   cursor: pointer;
-  margin-top: 10px;
+  font-weight: bold;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 15px;
-  background: #e5e7eb;
+  padding: 20px;
+  background: #020617;
 }
 
-/* 🔹 Responsive Design */
+/* RESPONSIVE */
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  section {
-    padding: 20px;
+  .hero-content {
+    padding: 30px;
   }
 }
