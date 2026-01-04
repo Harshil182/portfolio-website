@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #334155;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #e5e7eb;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
