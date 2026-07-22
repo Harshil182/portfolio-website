@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Harshil Prajapati - Information Technology undergraduate and full-stack developer building modern web experiences with MERN, TypeScript, APIs, and AI-powered applications."
+    />
+    <meta
+      name="keywords"
+      content="Harshil Prajapati, portfolio, full-stack developer, MERN stack, React, Node.js, TypeScript, software developer"
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>Harshil Prajapati | Full-Stack Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="loading-screen" aria-hidden="true">
+      <div class="loading-screen__core"></div>
+      <p>Loading portfolio experience...</p>
+    </div>
+
+    <div class="cursor cursor--dot" aria-hidden="true"></div>
+    <div class="cursor cursor--glow" aria-hidden="true"></div>
+    <div class="cursor-trail" aria-hidden="true"></div>
+    <div class="spotlight" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand magnetic" href="#home" aria-label="Harshil Prajapati home">
+          <span class="brand__mark">HP</span>
+          <span class="brand__text">Harshil Prajapati</span>
+        </a>
+
+        <button
+          class="nav-toggle magnetic"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle magnetic ripple" type="button" aria-label="Toggle color theme">
+            <span class="theme-toggle__icon theme-toggle__icon--sun">Sun</span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon">Moon</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section hero--home" id="home">
+        <div class="hero__grid container">
+          <div class="hero__content reveal">
+            <p class="eyebrow">Available for internship and entry-level roles</p>
+            <h1>Harshil Prajapati</h1>
+            <p class="hero__role">
+              I build <span class="typing" data-words='["full-stack products","responsive interfaces","API-driven systems","AI-powered experiences"]'></span>
+            </p>
+            <p class="hero__summary">
+              Information Technology undergraduate skilled in full-stack web development, TypeScript, REST APIs, JWT authentication, DSA,
+              and modern UI engineering. I build polished digital products with practical business impact.
+            </p>
+
+            <div class="hero__actions">
+              <a class="button button--primary magnetic ripple" href="#projects">View Projects</a>
+              <a class="button button--secondary magnetic ripple" href="#contact">Contact Me</a>
+              <!-- Replace href with ./resume.pdf after copying your actual resume file into this folder. -->
+              <a class="button button--ghost magnetic ripple" href="#resume">Download Resume</a>
+            </div>
+
+            <ul class="hero__meta" aria-label="Quick highlights">
+              <li><strong>Location</strong><span>Anand, Gujarat, India</span></li>
+              <li><strong>Education</strong><span>B.Tech IT, ADIT</span></li>
+              <li><strong>Focus</strong><span>MERN, TypeScript, APIs</span></li>
+            </ul>
+
+            <div class="social-row" aria-label="Social links">
+              <!-- Replace # with your exact social profile URLs. -->
+              <a class="social-link magnetic" href="#" aria-label="LinkedIn profile">
+                <span>in</span>
+              </a>
+              <a class="social-link magnetic" href="#" aria-label="GitHub profile">
+                <span>gh</span>
+              </a>
+              <a class="social-link magnetic" href="mailto:prajapatiharshil251@gmail.com" aria-label="Send email">
+                <span>@</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="hero-card glass tilt">
+              <div class="hero-card__badge floating-chip">Open to work</div>
+              <div class="hero-card__portrait">
+                <div class="portrait-ring"></div>
+                <div class="portrait-core">
+                  <span>HP</span>
+                  <small>Full-Stack Developer</small>
+                </div>
+                <div class="floating-icon floating-icon--react">React</div>
+                <div class="floating-icon floating-icon--node">Node</div>
+                <div class="floating-icon floating-icon--ts">TS</div>
+              </div>
+              <div class="hero-card__stats">
+                <article>
+                  <strong data-counter="2">0</strong>
+                  <span>Projects</span>
+                </article>
+                <article>
+                  <strong data-counter="1">0</strong>
+                  <span>Internship</span>
+                </article>
+                <article>
+                  <strong data-counter="2">0</strong>
+                  <span>Certifications</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-separator wave" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container stack-lg reveal">
+          <div class="section-heading">
+            <p class="eyebrow">About me</p>
+            <h2>Engineering products with logic, polish, and business clarity</h2>
+          </div>
+
+          <div class="about-grid">
+            <article class="glass panel">
+              <p>
+                I am an Information Technology undergraduate with a strong base in software fundamentals, problem solving, object-oriented
+                programming, and modern full-stack web development. I enjoy building interfaces that feel refined while keeping the backend
+                architecture practical and scalable.
+              </p>
+              <p>
+                My recent work includes an AI-powered face recognition attendance platform and a full-stack e-commerce application with secure
+                APIs, real-time flows, and responsive design.
+              </p>
+            </article>
+
+            <div class="about-highlights">
+              <article class="glass panel reveal">
+                <h3>Core strengths</h3>
+                <ul>
+                  <li>REST API integration and CRUD architecture</li>
+                  <li>Responsive frontend implementation with React and TypeScript</li>
+                  <li>Problem solving with DSA and OOP fundamentals</li>
+                </ul>
+              </article>
+              <article class="glass panel reveal">
+                <h3>Career goal</h3>
+                <p>Seeking software developer and full-stack developer internship or entry-level opportunities.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Modern development stack with strong fundamentals</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Languages</h3>
+              <div class="chip-list">
+                <span class="chip">C</span><span class="chip">C++</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>JavaScript / TypeScript</span><div class="progress"><i style="--value: 88%"></i></div></div>
+                <div class="progress-item"><span>Python</span><div class="progress"><i style="--value: 76%"></i></div></div>
+              </div>
+            </article>
+
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Frontend</h3>
+              <div class="chip-list">
+                <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">React.js</span><span class="chip">Responsive Design</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>Responsive UI</span><div class="progress"><i style="--value: 90%"></i></div></div>
+                <div class="progress-item"><span>React.js</span><div class="progress"><i style="--value: 84%"></i></div></div>
+              </div>
+            </article>
+
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Backend</h3>
+              <div class="chip-list">
+                <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST APIs</span><span class="chip">JWT Auth</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>API Development</span><div class="progress"><i style="--value: 82%"></i></div></div>
+                <div class="progress-item"><span>Authentication</span><div class="progress"><i style="--value: 74%"></i></div></div>
+              </div>
+            </article>
+
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Database</h3>
+              <div class="chip-list">
+                <span class="chip">MongoDB</span><span class="chip">MySQL</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>MongoDB</span><div class="progress"><i style="--value: 80%"></i></div></div>
+                <div class="progress-item"><span>MySQL</span><div class="progress"><i style="--value: 68%"></i></div></div>
+              </div>
+            </article>
+
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Tools</h3>
+              <div class="chip-list">
+                <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Postman</span><span class="chip">VS Code</span><span class="chip">Vercel</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>Git Workflows</span><div class="progress"><i style="--value: 78%"></i></div></div>
+                <div class="progress-item"><span>Debugging</span><div class="progress"><i style="--value: 80%"></i></div></div>
+              </div>
+            </article>
+
+            <article class="skill-group glass panel tilt reveal">
+              <h3>Version Control</h3>
+              <div class="chip-list">
+                <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Collaboration</span>
+              </div>
+              <div class="progress-list">
+                <div class="progress-item"><span>Code Collaboration</span><div class="progress"><i style="--value: 77%"></i></div></div>
+                <div class="progress-item"><span>Project Discipline</span><div class="progress"><i style="--value: 81%"></i></div></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected builds that combine strong UX with real functionality</h2>
+          </div>
+
+          <div class="filter-row reveal" role="tablist" aria-label="Project filters">
+            <button class="filter-chip is-active magnetic ripple" data-filter="all" type="button">All</button>
+            <button class="filter-chip magnetic ripple" data-filter="ai" type="button">AI</button>
+            <button class="filter-chip magnetic ripple" data-filter="fullstack" type="button">Full-Stack</button>
+            <button class="filter-chip magnetic ripple" data-filter="mern" type="button">MERN</button>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card glass tilt reveal" data-category="ai fullstack">
+              <img
+                loading="lazy"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2306b6d4'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' rx='36' fill='%23071322'/%3E%3Ccircle cx='160' cy='120' r='74' fill='url(%23g)' opacity='.3'/%3E%3Ccircle cx='680' cy='380' r='120' fill='%230ea5e9' opacity='.15'/%3E%3Crect x='76' y='92' width='648' height='316' rx='26' fill='%230b1730' stroke='%2338bdf8' opacity='.95'/%3E%3Ctext x='94' y='174' fill='white' font-size='34' font-family='Arial, sans-serif'%3EFace Recognition%3C/text%3E%3Ctext x='94' y='216' fill='%2394a3b8' font-size='26' font-family='Arial, sans-serif'%3EAttendance System%3C/text%3E%3Ctext x='94' y='288' fill='%2306b6d4' font-size='22' font-family='Arial, sans-serif'%3EReact.js  •  Flask  •  MongoDB  •  DeepFace%3C/text%3E%3C/svg%3E"
+                alt="Face Recognition Attendance System preview"
+              />
+              <div class="project-card__body">
+                <div>
+                  <p class="project-tag">AI Platform</p>
+                  <h3>Face Recognition Attendance System</h3>
+                  <p>
+                    Built an AI-powered attendance system that automates classroom tracking through real-time face detection and secure record
+                    management.
+                  </p>
+                </div>
+                <ul class="project-points">
+                  <li>Role-based admin, teacher, and student interfaces</li>
+                  <li>DeepFace-driven recognition flow with Flask APIs</li>
+                  <li>MongoDB-backed attendance data storage</li>
+                </ul>
+                <div class="chip-list">
+                  <span class="chip">React.js</span><span class="chip">Flask</span><span class="chip">MongoDB</span><span class="chip">Python</span><span class="chip">DeepFace</span>
+                </div>
+                <div class="project-actions">
+                  <!-- Replace # with your repository URL. -->
+                  <a class="button button--secondary magnetic ripple" href="#">GitHub</a>
+                  <!-- Replace # with your deployed demo URL. -->
+                  <a class="button button--primary magnetic ripple" href="#">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass tilt reveal" data-category="fullstack mern">
+              <img
+                loading="lazy"
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' rx='36' fill='%23060d18'/%3E%3Crect x='80' y='82' width='640' height='336' rx='28' fill='%230d1626' stroke='url(%23g2)' stroke-width='2'/%3E%3Crect x='118' y='126' width='186' height='232' rx='22' fill='%23172136'/%3E%3Crect x='336' y='126' width='182' height='96' rx='18' fill='%230ea5e9' opacity='.18'/%3E%3Crect x='336' y='246' width='270' height='40' rx='14' fill='%23a855f7' opacity='.16'/%3E%3Crect x='336' y='306' width='194' height='24' rx='12' fill='%23e2e8f0' opacity='.14'/%3E%3Ctext x='340' y='188' fill='white' font-size='32' font-family='Arial, sans-serif'%3EOnline Clothing Store%3C/text%3E%3Ctext x='340' y='356' fill='%2394a3b8' font-size='22' font-family='Arial, sans-serif'%3EReact.js  •  Node.js  •  Express.js  •  MongoDB%3C/text%3E%3C/svg%3E"
+                alt="Online Clothing Store preview"
+              />
+              <div class="project-card__body">
+                <div>
+                  <p class="project-tag">E-commerce</p>
+                  <h3>Online Clothing Store</h3>
+                  <p>
+                    Developed a full-stack shopping platform with responsive browsing, cart management, inventory handling, and automated bill
+                    generation.
+                  </p>
+                </div>
+                <ul class="project-points">
+                  <li>Add-to-cart flow with persistent product and order data</li>
+                  <li>Responsive shopping UI for product discovery</li>
+                  <li>Backend APIs for product, cart, and checkout operations</li>
+                </ul>
+                <div class="chip-list">
+                  <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">MongoDB</span>
+                </div>
+                <div class="project-actions">
+                  <!-- Replace # with your repository URL. -->
+                  <a class="button button--secondary magnetic ripple" href="#">GitHub</a>
+                  <!-- Replace # with your deployed demo URL. -->
+                  <a class="button button--primary magnetic ripple" href="#">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Academic foundation in technology and continuous growth</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card glass panel reveal">
+              <span class="timeline-card__date">Aug 2023 - Jun 2027</span>
+              <h3>A. D. Patel Institute of Technology (ADIT), Anand</h3>
+              <p>B.Tech in Information Technology, CVM University</p>
+              <strong>CGPA: 8.62 / 10</strong>
+            </article>
+            <article class="timeline-card glass panel reveal">
+              <span class="timeline-card__date">2023</span>
+              <h3>Anand High School, Anand</h3>
+              <p>Higher Secondary Certificate (HSC), GSEB Board</p>
+              <strong>Percentage: 62.76%</strong>
+            </article>
+            <article class="timeline-card glass panel reveal">
+              <span class="timeline-card__date">2021</span>
+              <h3>Anand High School, Anand</h3>
+              <p>Secondary School Certificate (SSC), GSEB Board</p>
+              <strong>Percentage: 73.16%</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Hands-on internship work in full-stack web development</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card glass panel reveal">
+              <span class="timeline-card__date">May 2026 - Jul 2026</span>
+              <h3>CodeTech IT Solutions Pvt. Ltd.</h3>
+              <p>Full Stack Web Development Intern</p>
+              <ul>
+                <li>Developed responsive web applications using HTML, CSS, JavaScript, React.js, Node.js, and MongoDB.</li>
+                <li>Built and integrated RESTful APIs for seamless frontend-backend communication and CRUD workflows.</li>
+                <li>Contributed to debugging, testing, and performance optimization using professional Git workflows.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certificates">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Certificates</p>
+            <h2>Focused learning across cloud and emerging AI workflows</h2>
+          </div>
+          <div class="card-grid two-up">
+            <article class="glass panel reveal">
+              <h3>Cloud Computing - NPTEL</h3>
+              <p>Certification focused on cloud concepts, service models, and deployment fundamentals.</p>
+            </article>
+            <article class="glass panel reveal">
+              <h3>Workshop on Agentic AI and Automation - ADIT</h3>
+              <p>Workshop centered on AI agents, automation concepts, and practical implementation awareness.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="achievements">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Achievements</p>
+            <h2>Growth milestones and strengths worth highlighting</h2>
+          </div>
+          <div class="card-grid three-up">
+            <!-- Replace these with your verified achievements when available. -->
+            <article class="glass panel reveal">
+              <h3>Strong academic consistency</h3>
+              <p>Maintained an 8.62 CGPA while building practical full-stack and AI-based projects.</p>
+            </article>
+            <article class="glass panel reveal">
+              <h3>Applied project execution</h3>
+              <p>Delivered end-to-end applications covering frontend UX, backend APIs, authentication, and database integration.</p>
+            </article>
+            <article class="glass panel reveal">
+              <h3>Fast technical adaptability</h3>
+              <p>Expanded from programming fundamentals into MERN development, API design, and emerging AI tooling.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="profiles">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Coding profiles</p>
+            <h2>Platforms where recruiters can review my technical presence</h2>
+          </div>
+          <div class="profile-grid">
+            <!-- Replace # with your exact profile links for each platform. -->
+            <a class="glass profile-card magnetic reveal" href="#"><strong>GitHub</strong><span>Code repositories and project work</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>LinkedIn</strong><span>Professional updates and network</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>LeetCode</strong><span>DSA problem solving profile</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>HackerRank</strong><span>Programming assessments</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>CodeChef</strong><span>Competitive programming presence</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>Codeforces</strong><span>Contest performance</span></a>
+            <a class="glass profile-card magnetic reveal" href="#"><strong>GeeksforGeeks</strong><span>Practice and technical learning</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="resume">
+        <div class="container">
+          <article class="glass resume-banner reveal">
+            <div>
+              <p class="eyebrow">Resume</p>
+              <h2>Keep a polished version ready for recruiters</h2>
+              <p>
+                Download the latest resume or use this section as a quick recruiter overview before initiating contact.
+              </p>
+            </div>
+            <div class="resume-banner__actions">
+              <!-- Replace href with ./resume.pdf after copying the actual file from attachments. -->
+              <a class="button button--primary magnetic ripple" href="#">Download Resume</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Services</p>
+            <h2>How I can contribute to growing product teams</h2>
+          </div>
+          <div class="card-grid three-up">
+            <article class="glass panel reveal"><h3>Frontend Development</h3><p>Responsive UI implementation with strong visual quality and modern interaction patterns.</p></article>
+            <article class="glass panel reveal"><h3>Full-Stack Prototyping</h3><p>Rapid product development using frontend components, REST APIs, authentication, and database integration.</p></article>
+            <article class="glass panel reveal"><h3>API Integration</h3><p>Reliable connection between interfaces and backend systems with clean, scalable data flows.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Professional-style references for layout completeness</h2>
+          </div>
+          <div class="card-grid three-up">
+            <article class="glass panel reveal">
+              <p>"Harshil brings a rare mix of curiosity, implementation speed, and strong UI attention for an early-career developer."</p>
+              <strong>Dummy Mentor Review</strong>
+            </article>
+            <article class="glass panel reveal">
+              <p>"His project work reflects practical full-stack thinking, especially in API integration and responsive UX."</p>
+              <strong>Dummy Technical Lead Review</strong>
+            </article>
+            <article class="glass panel reveal">
+              <p>"A dependable learner who can translate technical requirements into polished deliverables."</p>
+              <strong>Dummy Team Feedback</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="statistics">
+        <div class="container stack-lg">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Statistics</p>
+            <h2>Quick metrics that showcase readiness and momentum</h2>
+          </div>
+          <div class="stats-grid">
+            <article class="glass stat-card reveal"><strong data-counter="2">0</strong><span>Projects</span></article>
+            <article class="glass stat-card reveal"><strong data-counter="1">0</strong><span>Internships</span></article>
+            <article class="glass stat-card reveal"><strong data-counter="2">0</strong><span>Certificates</span></article>
+            <article class="glass stat-card reveal"><strong data-counter="14">0</strong><span>Technologies</span></article>
+            <!-- Replace 250 with your real solved problem count when available. -->
+            <article class="glass stat-card reveal"><strong data-counter="250">0</strong><span>Coding Problems Solved</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="stack-lg reveal">
+            <div class="section-heading">
+              <p class="eyebrow">Contact</p>
+              <h2>Let's build something valuable together</h2>
+            </div>
+
+            <div class="card-grid two-up compact">
+              <article class="glass panel"><h3>Email</h3><p><a href="mailto:prajapatiharshil251@gmail.com">prajapatiharshil251@gmail.com</a></p></article>
+              <article class="glass panel"><h3>Phone</h3><p><a href="tel:+917874693384">+91 7874693384</a></p></article>
+              <article class="glass panel"><h3>Location</h3><p>Anand, Gujarat, India</p></article>
+              <article class="glass panel"><h3>Copy Email</h3><button class="button button--ghost magnetic ripple copy-email" type="button" data-copy="prajapatiharshil251@gmail.com">Copy</button></article>
+            </div>
+          </div>
+
+          <form class="glass contact-form reveal" id="contact-form" aria-label="Contact form">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Project or opportunity" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about the role or project" required></textarea>
+            </label>
+            <button class="button button--primary magnetic ripple" type="submit">Send Message</button>
+            <p class="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand--footer" href="#home">Harshil Prajapati</a>
+          <p>Full-stack developer focused on polished interfaces, solid engineering, and practical product building.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <div class="social-row social-row--footer">
+            <a class="social-link magnetic" href="#" aria-label="LinkedIn profile"><span>in</span></a>
+            <a class="social-link magnetic" href="#" aria-label="GitHub profile"><span>gh</span></a>
+            <a class="social-link magnetic" href="mailto:prajapatiharshil251@gmail.com" aria-label="Send email"><span>@</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Harshil Prajapati. Crafted for premium software engineering opportunities.</p>
+      </div>
+    </footer>
+
+    <button class="back-to-top magnetic ripple" type="button" aria-label="Back to top">Top</button>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
